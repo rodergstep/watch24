@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.666 15.666">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #ebebeb;
+        opacity: 0.46;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="compare" transform="translate(-303.667 -1796.667)">
+    <g id="Rectangle_121" data-name="Rectangle 121" class="cls-1" transform="translate(303.667 1796.667)">
+      <rect class="cls-3" width="15.666" height="15.666"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="14.666" height="14.666"/>
+    </g>
+    <path id="Union_26" data-name="Union 26" class="cls-2" d="M3.525,3.525h0v0h0v0Z" transform="translate(307.95 1801)"/>
+  </g>
+</svg>

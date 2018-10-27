@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.547 18.388">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: bevel;
+      }
+    </style>
+  </defs>
+  <path id="btn-left-arrow" class="cls-1" d="M0,8.84,8.84,0,0,8.84l8.84,8.841Z" transform="translate(9.194 18.035) rotate(180)"/>
+</svg>
