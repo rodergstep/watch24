@@ -213,6 +213,12 @@ img { max-width: 100%; }
 
 .navbar-toggler-icon { width: 26.3px; height: 19px; background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26.325 19'%3E%3Cdefs%3E%3Cstyle%3E.a,.b,.d{fill:none;}.a,.b{stroke:%231d363b;}.b{stroke-linejoin:round;}.c{stroke:none;}%3C/style%3E%3C/defs%3E%3Cg transform='translate(-323 -14)'%3E%3Cline class='a' x1='9.132' transform='translate(331.596 20.5)'/%3E%3Cline class='a' x1='9.132' transform='translate(331.596 26.5)'/%3E%3Cg class='b' transform='translate(323 14)'%3E%3Crect class='c' width='26.325' height='19'/%3E%3Crect class='d' x='0.5' y='0.5' width='25.325' height='18'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
 
+@media only screen and (max-width: 992px) { #navbarToggler { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 10; background: #fff; transition: all 0.3s ease-in-out; padding-top: 65px; }
+  #navbarToggler .nav-item { width: 100%; padding: 0.5rem 1rem; }
+  #navbarToggler .nav-item--cart { position: absolute; left: 0; top: 0; margin-left: 0 !important; border: none; border-bottom: solid 1px #1d363b; }
+  .navbar-toggler { transition: all 0.3s ease-in-out; }
+  .navbar-toggler[aria-expanded='true'] { position: fixed; right: 0; top: 10px; z-index: 11; } }
+
 .carousel-wrapper { overflow: hidden; }
 
 .carousel-wrapper .slick-next { right: 25px; }
