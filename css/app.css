@@ -528,7 +528,7 @@ a.more-product-info-last:hover { text-decoration: none; color: #fff; }
 
 .hero__descr p { margin: 0; }
 
-.about-page, .contact-page { background-color: #1d363b; }
+.about-page, .contact-page { background-color: #1d363b; color: #fff; }
 
 .article { padding: 8rem 0 5rem; background-color: #1d363b; color: #fff; }
 
@@ -573,5 +573,11 @@ a.more-product-info-last:hover { text-decoration: none; color: #fff; }
 .timeline__year.with-caption { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; }
 
 .timeline__descr { padding-left: 2rem; }
+
+.contact__logo { max-height: 51px; }
+
+.contact__block { padding: 4rem 0; }
+
+.contact-page { padding-bottom: 5rem; }
 
 /*# sourceMappingURL=app.css.map */
