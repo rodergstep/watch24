@@ -534,7 +534,9 @@ a.more-product-info-last:hover { text-decoration: none; color: #fff; }
 
 .article__title { font-size: 2rem; line-height: 1.33; color: #dfc15e; }
 
-.article__text { margin-top: 2rem; column-count: 2; font-family: "Lora", serif; line-height: 1.5; font-weight: normal; }
+.article__text { margin-top: 2rem; font-family: "Lora", serif; line-height: 1.5; font-weight: normal; }
+
+@media only screen and (min-width: 768px) { .article__text { column-count: 2; } }
 
 .article__text:first-letter { font-size: 3rem; line-height: 0.83; letter-spacing: normal; color: #dfc15e; float: left; padding: 0.1em 0.15em 0 0; }
 
@@ -566,18 +568,45 @@ a.more-product-info-last:hover { text-decoration: none; color: #fff; }
 
 .timeline__item p { margin: 0.6rem 0; }
 
+@media only screen and (max-width: 768px) { .timeline__item { font-size: 0.9rem; line-height: 1.28; }
+  .timeline__item .article__title { font-size: 1.5rem; } }
+
 .timeline__year, .timeline__descr { width: 50%; -ms-flex-negative: 0; flex-shrink: 0; }
 
 .timeline__year { text-align: right; padding-right: 2rem; }
 
-.timeline__year.with-caption { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; }
+.timeline__year.with-caption { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; }
 
 .timeline__descr { padding-left: 2rem; }
 
-.contact__logo { max-height: 51px; }
+.contact__details { font-family: "Lora", serif; line-height: 1.5; }
 
-.contact__block { padding: 4rem 0; }
+.contact__details a { line-height: inherit; }
 
-.contact-page { padding-bottom: 5rem; }
+.contact__logo { height: 51px; margin-bottom: 2rem; }
+
+.contact__info { margin: 2rem 0; }
+
+.contact__block { padding: 4rem 15px 3rem; }
+
+.contact-page { padding-bottom: 6.5rem; }
+
+.form__title { margin-bottom: 1.5rem; font-size: 1.5rem; line-height: 1.33; }
+
+.form .form-control { height: 35px; border-radius: 0; border: solid 1px #e1e1e1; background-color: #1d363b; color: #fff; }
+
+.form .form-control:focus { color: #fff; border: solid 1px #fff; background-color: #1d363b; }
+
+.form .form-control::-webkit-input-placeholder { font-size: 14px; font-weight: 300; color: rgba(255, 255, 255, 0.5); }
+
+.form .form-control::-moz-placeholder { font-size: 14px; font-weight: 300; color: rgba(255, 255, 255, 0.5); }
+
+.form .form-control:-ms-input-placeholder { font-size: 14px; font-weight: 300; color: rgba(255, 255, 255, 0.5); }
+
+.form .form-control::-moz-placeholder { font-size: 14px; font-weight: 300; color: rgba(255, 255, 255, 0.5); }
+
+.form .btn[type='submit'] { display: inline-block; width: 146px; height: 31px; background-color: #fff; border-radius: 0; font-size: 12px; font-weight: 300; color: #1d363b; text-transform: uppercase; }
+
+textarea.form-control { height: 155px; }
 
 /*# sourceMappingURL=app.css.map */
