@@ -2,6 +2,9 @@
   $('.filter__btn-more').click(function() {
     $(this).closest('.filter__block').find('ul li:nth-child(n + 5)').slideToggle('fast');
   });
+  $('.btn-filters-trigger ').click(function() {
+    $('body').toggleClass('filter-mobile-showing');
+  });
   // slick slider
   const $carouselWrappers = $('.carousel-wrapper');
   if ($carouselWrappers.length) {

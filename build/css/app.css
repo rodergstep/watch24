@@ -32,6 +32,8 @@ a:hover { text-decoration: none; }
 
 .icon-facebook { width: 0.51em; height: 1em; fill: initial; }
 
+.icon-filters { width: 1.08em; height: 1em; fill: initial; }
+
 .icon-handshake { width: 1em; height: 1em; fill: initial; }
 
 .icon-logo { width: 0.88em; height: 1em; fill: initial; }
@@ -225,7 +227,7 @@ img { max-width: 100%; }
 
 .navbar-toggler-icon { width: 26.3px; height: 19px; background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26.325 19'%3E%3Cdefs%3E%3Cstyle%3E.a,.b,.d{fill:none;}.a,.b{stroke:%231d363b;}.b{stroke-linejoin:round;}.c{stroke:none;}%3C/style%3E%3C/defs%3E%3Cg transform='translate(-323 -14)'%3E%3Cline class='a' x1='9.132' transform='translate(331.596 20.5)'/%3E%3Cline class='a' x1='9.132' transform='translate(331.596 26.5)'/%3E%3Cg class='b' transform='translate(323 14)'%3E%3Crect class='c' width='26.325' height='19'/%3E%3Crect class='d' x='0.5' y='0.5' width='25.325' height='18'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
 
-@media only screen and (max-width: 992px) { #navbarToggler { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 10; background: #fff; transition: all 0.3s ease-in-out; padding-top: 65px; }
+@media only screen and (max-width: 991px) { #navbarToggler { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 10; background: #fff; transition: all 0.3s ease-in-out; padding-top: 65px; }
   #navbarToggler .nav-item { width: 100%; padding: 0.5rem 1rem; }
   #navbarToggler .nav-item--cart { position: absolute; left: 0; top: 0; margin-left: 0 !important; border: none; border-bottom: solid 1px #1d363b; }
   .navbar-toggler { transition: all 0.3s ease-in-out; }
@@ -769,14 +771,46 @@ textarea.form-control { height: 155px; }
 
 .shop__title { font-size: 1.5rem; text-transform: uppercase; margin-bottom: 10px; }
 
+@media only screen and (max-width: 768px) { .shop__title { margin-bottom: 1rem; } }
+
 .shop__header { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; width: 100%; font-size: 16px; min-height: 20px; }
+
+@media only screen and (max-width: 768px) { .shop__breadcrumbs, .shop__found { display: none; } }
+
+.btn-filters-trigger { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; width: 120.6px; height: 31px; padding: 5px 10px; background-color: #1d363b; color: #fff; line-height: 1; font-size: 16px; border-radius: 0; text-transform: uppercase; border: none; }
+
+.btn-filters-trigger:focus { box-shadow: none; }
+
+.btn-filters-trigger .icon { width: 14px; height: 14px; fill: #fff; margin-right: 16px; }
+
+@media only screen and (min-width: 769px) { .btn-filters-trigger { display: none; } }
+
+.filter-mobile-showing .shop__filter { top: 0; opacity: 1; }
+
+@media only screen and (max-width: 768px) { .shop__filter { position: fixed; left: 0; top: -100vh; z-index: 100; width: 100%; margin: 0; padding: 1.5rem 2rem; border-radius: 0; height: 100vh; overflow-y: scroll; opacity: 0.4; transition: all 0.3s ease-in-out; overflow-y: scroll; }
+  .filter__block { margin-bottom: 1.5rem; } }
+
+.shop__filter-close { position: absolute; top: 20px; right: 20px; width: 25px; height: 25px; background: transparent; -ms-transform: rotate(45deg); transform: rotate(45deg); }
+
+.shop__filter-close span { display: inline-block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; background: #1d363b; margin: auto; }
+
+.shop__filter-close span:first-child { width: 2px; height: 100%; }
+
+.shop__filter-close span:last-child { width: 100%; height: 2px; }
+
+.shop__filter { background-color: #fff; z-index: 102 !important; }
 
 .pagination { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
 .pagination__arrow .icon { stroke: #1d363b; width: 5.1px; height: 9.4px; }
 
+@media only screen and (max-width: 768px) { .pagination__arrow .icon { width: 16px; height: 24px; stroke-width: 2px; } }
+
 .pagination__list { display: -ms-flexbox; display: flex; margin: 5px 10px; }
 
 .pagination__list li a { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 18px; height: 18px; margin: 5px; background-color: #232323; color: #fff; font-size: 14px; }
+
+@media only screen and (max-width: 768px) { .pagination__list { margin: 5px 25px; }
+  .pagination__list li a { width: 37px; height: 37px; margin: 5px 10px; font-size: 25px; } }
 
 /*# sourceMappingURL=app.css.map */
