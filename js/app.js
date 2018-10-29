@@ -1,4 +1,7 @@
 (function($) {
+  $('.filter__btn-more').click(function() {
+    $(this).closest('.filter__block').find('ul li:nth-child(n + 5)').slideToggle('fast');
+  });
   // slick slider
   const $carouselWrappers = $('.carousel-wrapper');
   if ($carouselWrappers.length) {
@@ -93,7 +96,7 @@
         marker: true,
         scrollwheel: false,
         mapTypeControl: false,
-        streetViewControl: false
+        streetViewControl: false,
       };
       var mapCanvas = $(this).get(0);
       var map = new google.maps.Map(mapCanvas, mapOptions);
@@ -111,7 +114,7 @@
       }
     });
   };
-  initMaps()
+  initMaps();
 })(jQuery);
 // Google Map
 
