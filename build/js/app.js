@@ -5,6 +5,14 @@
   $('.btn-filters-trigger ').click(function() {
     $('body').toggleClass('filter-mobile-showing');
   });
+
+  $('.custom-tooltip').mouseenter(function() {
+    $(this).find('.custom-tooltip__popup').fadeToggle();
+  });
+  $('.custom-tooltip').mouseleave(function() {
+    $(this).find('.custom-tooltip__popup').fadeToggle();
+  });
+
   // slick slider
   const $carouselWrappers = $('.carousel-wrapper');
   if ($carouselWrappers.length) {
