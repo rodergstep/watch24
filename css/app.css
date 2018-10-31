@@ -573,6 +573,8 @@ a.more-product-info-last:hover { text-decoration: none; color: #fff; }
 
 .hero .slide { padding: 0.7rem 0; text-align: left; }
 
+.hero .slide .slide__text { padding-left: 0; }
+
 .about-page, .contact-page { background-color: #1d363b; color: #fff; }
 
 .article { padding: 8rem 0 5rem; background-color: #1d363b; color: #fff; }
