@@ -199,15 +199,40 @@
                     </div>
                   </div>
                   <div class="col-xl-7">
-                    <div class="form__dropzone">
+                    <!-- Upload File  -->
+                    <div id="file-upload-form" class="uploader">
+                      <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+                      <label for="file-upload" id="file-drag">
+                        <img id="file-image" src="#" alt="Preview" class="hidden">
+                        <div id="start">
+                          <svg class="icon icon-upload">
+                            <use xlink:href="img/sprite.svg#icon-upload"></use>
+                          </svg>
+                          <p class="drag-drop">
+                            <span>Drag & Drop</span>
+                            <span class="drag-drop__or">oder</span> </p>
+                          <div id="notimage" class="hidden">Please select an image</div>
+                          <span id="file-upload-btn" class="btn">DURCHSUCHEN</span>
+                          <span>lade auf 2 Bilder hoch</span>
+                        </div>
+                        <div id="response" class="hidden">
+                          <div id="messages"></div>
+                          <progress class="progress" id="file-progress" value="0">
+                            <span>0</span>% </progress>
+                        </div>
+                      </label>
                     </div>
+                    <!-- end Upload File  -->
                   </div>
                   <div class="col-xl-1">
-                    <div class="row text-right">
-                      <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Senden</button>
-                      </div>
-                    </div>
+                    <button type="submit" class="btn btn-primary">
+                      <span class="circle-white">
+                        <svg class="icon icon-next">
+                          <use xlink:href="img/sprite.svg#icon-next"></use>
+                        </svg>
+                      </span>
+                      <span>WEITEReiter</span>
+                    </button>
                   </div>
                 </div>
               </form>
