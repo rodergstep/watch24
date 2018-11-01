@@ -400,6 +400,8 @@ a { transition: all 0.3s ease; text-decoration: none; color: inherit; }
 
 .content__text { font-family: "Lora", serif; font-size: 1rem; line-height: 1.5; }
 
+@media only screen and (max-width: 480px) { .content__text { font-size: 0.9rem; } }
+
 .newly-arrived-box { margin-top: 2rem; cursor: pointer; position: relative; transition: all 0.35s; }
 
 .newly-arrived-box:hover .newly-arrived-box-hover { opacity: 1; }
@@ -607,9 +609,11 @@ a.more-product-info-last:hover { text-decoration: none; color: #fff; }
 .footer__copyright { width: 100%; padding: 0.8rem 0 1rem; text-align: center; border-top: 1px solid rgba(29, 54, 59, 0.5); font-family: 'Lato', sans-serif; font-weight: 400; font-size: 12px; color: rgba(29, 54, 59, 0.5); }
 
 /* End of Footer */
-.hero { position: relative; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; min-height: 285px; padding: 4.4rem 1rem; color: #fff; line-height: 1.33; text-align: center; }
+.hero { position: relative; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; min-height: 285px; padding: 4.4rem 0; color: #fff; line-height: 1.33; text-align: center; }
 
-@media only screen and (max-width: 768px) { .hero { padding: 1.5rem 1rem; } }
+.hero > .container { z-index: 1; }
+
+@media only screen and (max-width: 768px) { .hero { padding: 1.5rem 0; } }
 
 .hero__text { z-index: 1; }
 
@@ -901,6 +905,8 @@ textarea.form-control { height: 155px; }
 
 .tooltip__item .icon { position: absolute; top: 0; bottom: 0; left: 0; margin: auto; }
 
+@media only screen and (max-width: 768px) { .sellwatch-page .slide__title { font-size: 1.5rem; } }
+
 .section-progress { padding: 3rem 0 5px; background-color: #f8f8f8; }
 
 .section-sendform { padding: 3.7rem 0 6rem; }
@@ -936,5 +942,7 @@ textarea.form-control { height: 155px; }
 .section-dark .content { color: inherit; }
 
 .section-dark .content__subtitle { color: #dfc15e; font-size: 1.5rem; margin-bottom: 0.8rem; }
+
+@media only screen and (max-width: 768px) { .section-dark .content { margin-bottom: 2rem; } }
 
 /*# sourceMappingURL=app.css.map */
